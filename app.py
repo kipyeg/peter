@@ -16,7 +16,7 @@ JOBS = [
   },
   {
     'id':3,
-    'title':'programmer',
+    'title':'full-stack developer',
     'location':'mombasa',
     'salary':'ksh 210,000'
   },
