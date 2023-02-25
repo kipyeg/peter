@@ -15,11 +15,19 @@
   </head>
   </head>
   <body>
+    {% include 'nav.html'%}
     <div class="container">
-<h1 class="text-uppercase text-danger text-center text-decoration-line-through">ptah {{company_name}}</h1>
+<h1 class="text-uppercase text-danger text-center text-decoration-line-through mt-2 mb-4">ptah {{company_name}}</h1>
   <img id="banner"class="img-fluid"src="https://media.istockphoto.com/id/1132635718/photo/beautiful-canal-and-traditional-houses-in-the-old-town-of-bruges-belgium.jpg?s=612x612&w=0&k=20&c=1lgEtH9r7f-rzpA630PpOOWFeMSDkd_77RK_1KTE0KI=">
     <h2 class="text-center">About clyde</h2>
+    <div class="row">
+      <div class="col-md- 6">
     <p class="fst-italic lh-lg">clyde is a graduate from machakos university who has a skill in web development using python , flask ,django and bootstrap.</p>
+      </div>
+      <div class="d-none d-md-block col-md-6 ">
+      <img class="rounded-top mb-3" src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlJTIwd29ya2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60">
+      </div>
+    </div>
   <h2 class="text-center" >Available Jobs</h2>
     <p class="fw-bold fs-2 text-decoration-underline">
       <div>
@@ -29,8 +37,8 @@
         {%endfor%}
       </div>
     </p>
-   <div class="text-center"> <button type="button" class="btn btn-warning btn-lg">Contact us</button></div>
-      <p>copyright 2022 @clyde</p>
+   <div class="text-center"> <a type="button" href="mailto:ptah12655@gmail.com?subject=Question%20about%20job%20openings&?body=my%20name%3A%3Center%20name%20here%3E%0D%0Amy%20question%3A%3CAsk%20your%20question%3E"class="btn btn-warning btn-lg">Contact us</a></div>
       </div>
+    {%include 'footer.html'%}
   </body>
 </html>
